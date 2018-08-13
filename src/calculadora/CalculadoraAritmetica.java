@@ -31,9 +31,9 @@ public class CalculadoraAritmetica {
         r = operando1 * operando2;
         return r;
     }
-    int dividir(){
-        int r;
+   double dividir(){
+        double r;
         r=operando1/operando2;
-        return r;
+       return r;
     }
 }
