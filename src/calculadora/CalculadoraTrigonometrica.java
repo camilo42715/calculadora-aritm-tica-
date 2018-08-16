@@ -10,6 +10,7 @@ import static java.lang.Math.*;
 public class CalculadoraTrigonometrica {
 
     double call;
+    double inversa;
 
     void convertir(double Unangulo) {
         call = Math.toRadians(Unangulo);
@@ -29,5 +30,12 @@ public class CalculadoraTrigonometrica {
     double tangente() {
         return tan(call);
     }
+    double arccos(){
+        return Math.acos(inversa);
+    }
+     double arcsin(){
+        return Math.asin(inversa);
+    }
+    
 
 }
