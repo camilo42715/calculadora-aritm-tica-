@@ -11,28 +11,28 @@ package calculadora;
  */
 public class CalculadoraAritmetica {
 
-    int operando1;
-    int operando2;
+    public int operando1;
+    public int operando2;
 
-    int sumar() {
+    public int sumar() {
         int r;
         r = operando1 + operando2;
         return r;
     }
 
-    int restar() {
+    public int restar() {
         int r;
         r = operando1 - operando2;
         return r;
     }
 
-    int multiplicar() {
+    public int multiplicar() {
         int r;
         r = operando1 * operando2;
         return r;
     }
 
-    double dividir() {
+    public double dividir() {
         double r;
         
         r= (operando1 *1.0 /operando2);

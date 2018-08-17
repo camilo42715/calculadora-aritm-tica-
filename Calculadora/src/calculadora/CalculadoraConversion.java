@@ -11,244 +11,244 @@ package calculadora;
  */
 public class CalculadoraConversion {
 
-    double valor;
+    public double valor;
 
     //metodos de  longitud
-    double MetrosCm() {
+    public double MetrosCm() {
         double unidad;
         unidad = valor * 100;
         return unidad;
     }
 
-    double MetrosKm() {
+   public  double MetrosKm() {
         double unidad;
         unidad = valor / 1000;
         return unidad;
     }
 
-    double Metrosft() {
+    public double Metrosft() {
         double unidad;
         unidad = valor * 3.280839895;
         return unidad;
     }
 
-    double MetroIn() {
+    public double MetroIn() {
         double unidad;
         unidad = valor * 39.3700787402;
         return unidad;
     }
 
-    double MetrosYd() {
+   public  double MetrosYd() {
         double unidad;
         unidad = valor * 1.093612983;
         return unidad;
     }
 
     //cm  
-    double CmMetros() {
+  public   double CmMetros() {
         double unidad;
         unidad = valor / 100;
         return unidad;
     }
 
-    double CmKm() {
+ public    double CmKm() {
         double unidad;
         unidad = valor * 0.0001;
         return unidad;
     }
 
-    double CmIn() {
+  public   double CmIn() {
         double unidad;
         unidad = valor * 0.39370078;
         return unidad;
     }
 
-    double CmFt() {
+  public   double CmFt() {
         double unidad;
         unidad = valor * 0.0328084;
         return unidad;
     }
 
-    double CmYd() {
+  public   double CmYd() {
         double unidad;
         unidad = valor * 0.0109361;
         return unidad;
     }
     //km
 
-    double KmCm() {
+  public   double KmCm() {
         double unidad;
         unidad = valor * 100000;
         return unidad;
     }
 
-    double KmMetro() {
+  public   double KmMetro() {
         double unidad;
         unidad = valor * 1000;
         return unidad;
     }
 
-    double KmIn() {
+  public   double KmIn() {
         double unidad;
         unidad = valor * 39370.078;
         return unidad;
     }
 
-    double Kmft() {
+ public    double Kmft() {
         double unidad;
         unidad = valor * 3280.841666667;
         return unidad;
     }
 
-    double KmYd() {
+  public   double KmYd() {
         double unidad;
         unidad = valor * 1093.61;
         return unidad;
     }
 
     //In
-    double Incm() {
+   public  double Incm() {
         double unidad;
         unidad = valor * 2.54;
         return unidad;
     }
 
-    double InMeTros() {
+   public  double InMeTros() {
         double unidad;
         unidad = valor * 0.0254;
         return unidad;
     }
 
-    double InKm() {
+  public   double InKm() {
         double unidad;
         unidad = valor * 0.0000254;
         return unidad;
     }
 
-    double InFt() {
+   public  double InFt() {
         double unidad;
         unidad = valor * 0.0833333;
         return unidad;
     }
 
-    double InYd() {
+  public   double InYd() {
         double unidad;
         unidad = valor * 0.02777;
         return unidad;
     }
 
     //ft
-    double FtCm() {
+ public    double FtCm() {
         double unidad;
         unidad = valor * 30.48;
         return unidad;
     }
 
-    double FtMetro() {
+  public   double FtMetro() {
         double unidad;
         unidad = valor * 0.3048;
         return unidad;
     }
 
-    double FtKm() {
+  public   double FtKm() {
         double unidad;
         unidad = valor * 0.0003048;
         return unidad;
     }
 
-    double Ftin() {
+  public   double Ftin() {
         double unidad;
         unidad = valor * 12;
         return unidad;
     }
 
-    double FtYd() {
+ public    double FtYd() {
         double unidad;
         unidad = valor * 0.333333;
         return unidad;
     }
 
     //yardas
-    double YdCm() {
+ public    double YdCm() {
         double unidad;
         unidad = valor * 91.44;
         return unidad;
     }
 
-    double YdMetros() {
+public     double YdMetros() {
         double unidad;
         unidad = valor * 0.9144;
         return unidad;
     }
 
-    double YdKm() {
+  public   double YdKm() {
         double unidad;
         unidad = valor * 0.0009144;
         return unidad;
     }
 
-    double YdIn() {
+  public   double YdIn() {
         double unidad;
         unidad = valor * 36;
         return unidad;
     }
 
-    double YdFt() {
+  public   double YdFt() {
         double unidad;
         unidad = valor * 3;
         return unidad;
     }
     //volumen 
 
-    double KgG() {
+   public  double KgG() {
         double unidad;
         unidad = valor * 1000;
         return unidad;
     }
 
-    double KgLb() {
+   public  double KgLb() {
         double unidad;
         unidad = valor * 2.20462;
         return unidad;
     }
 
-    double KgT() {
+   public  double KgT() {
         double unidad;
         unidad = valor * 0.001;
         return unidad;
     }
 
-    double GKg() {
+  public   double GKg() {
         double unidad;
         unidad = valor / 1000;
         return unidad;
     }
 
-    double GLb() {
+  public   double GLb() {
         double unidad;
         unidad = valor * 0.00220462;
         return unidad;
     }
 
-    double Gt() {
+ public    double Gt() {
         double unidad;
         unidad = valor * 0.000001;
         return unidad;
     }
 
-    double TKg() {
+  public   double TKg() {
         double unidad;
         unidad = valor * 1000;
         return unidad;
     }
 
-    double TG() {
+   public  double TG() {
         double unidad;
         unidad = valor * 1000000;
         return unidad;
     }
 
-    double Tlb() {
+   public  double Tlb() {
         double unidad;
         unidad = valor * 2204.62;
         return unidad;
