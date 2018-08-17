@@ -23,7 +23,7 @@ public class Calculadora {
         calculadorapro=new CalculadoraTrigonometrica();
         micalculadora = new CalculadoraAritmetica();
         Scanner capt = new Scanner(System.in);
-        System.out.println("seleccione el tipo de operaciones que quiere: \n 1.aritmeticas  \n 2.trigonometricas \n 3. conversion");
+        System.out.println("seleccione el tipo de operaciones que quiere: \n 1.aritmeticas  \n 2.trigonometricas \n 3. conversion  ");
         System.out.println("primer numero ");
         int a = capt.nextInt();
         System.out.println("segundo numero ");
