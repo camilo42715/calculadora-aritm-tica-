@@ -88,11 +88,12 @@ public class Calculadora {
                     case 2:
                         System.out.println("ingrese su  angulo");
                         angulonuevo = capt.nextInt();
-                        calculadorapro.call = angulonuevo;
+                        
                         System.out.println(calculadorapro.coseno());
                     case 3:
                         System.out.println("ingrese su  angulo");
                         angulonuevo = capt.nextInt();
+                        calculadorapro.convertir(angulonuevo);
                         calculadorapro.call = angulonuevo;
                         System.out.println(calculadorapro.tangente());
                     default:
