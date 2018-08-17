@@ -255,37 +255,37 @@ public     double YdMetros() {
     }
 
     //Temperatura 
-    double Celciusfahrenheit() {
+ public    double Celciusfahrenheit() {
         double unidad;
         unidad = (valor * 1.8) + 32;
         return unidad;
     }
 
-    double CelciusKelvin() {
+   public  double CelciusKelvin() {
         double unidad;
         unidad = valor + 273.15;
         return unidad;
     }
 
-    double KelvinCelcius() {
+  public  double KelvinCelcius() {
         double unidad;
         unidad = valor - 273.15;
         return unidad;
     }
 
-    double KelvinFahrenheit() {
+  public   double KelvinFahrenheit() {
         double unidad;
         unidad = (valor * 1.8) - 459.67;
         return unidad;
     }
 
-    double Fahrenheitkelvin() {
+   public  double Fahrenheitkelvin() {
         double unidad;
         unidad = (valor * 0.551) + 255.377;
         return unidad;
     }
 
-    double FahrenheiCelcius() {
+   public  double FahrenheiCelcius() {
         double unidad;
         unidad = (valor * 0.5556) - 17.7778;
         return unidad;

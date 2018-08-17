@@ -9,31 +9,31 @@ import static java.lang.Math.*;
 
 public class CalculadoraTrigonometrica {
 
-    double call;
-    double inversa;
+    public double call;
+   public double inversa;
 
-    void convertir(double Unangulo) {
+   public void convertir(double Unangulo) {
         call = Math.toRadians(Unangulo);
     }
 
-    double seno() {
+    public double seno() {
         return sin(call);
 
     }
 
-    double coseno() {
+     public double coseno() {
 
         return cos(call);
 
     }
 
-    double tangente() {
+     public double tangente() {
         return tan(call);
     }
-    double arccos(){
+    public double arccos(){
         return Math.acos(inversa);
     }
-     double arcsin(){
+    public double arcsin(){
         return Math.asin(inversa);
     }
     
