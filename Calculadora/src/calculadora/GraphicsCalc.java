@@ -257,7 +257,7 @@ public class GraphicsCalc extends javax.swing.JFrame {
         double nu1=Double.parseDouble(txt1.getText());
         double nu2=Double.parseDouble(txt2.getText());
         double r= nu1+nu2;
-        rpta.setText("la suma es  "+r);
+        rpta.setText("la suma es "+r);
     }//GEN-LAST:event_sumaActionPerformed
 
     private void restaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_restaActionPerformed
@@ -265,7 +265,7 @@ public class GraphicsCalc extends javax.swing.JFrame {
         double nu1=Double.parseDouble(txt1.getText());
         double nu2=Double.parseDouble(txt2.getText());
         double r= nu1-nu2;
-        rpta.setText("la resta es  "+r);
+        rpta.setText("la resta es "+r);
     }//GEN-LAST:event_restaActionPerformed
 
     private void mutiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mutiplicacionActionPerformed
@@ -273,7 +273,7 @@ public class GraphicsCalc extends javax.swing.JFrame {
         double nu1=Double.parseDouble(txt1.getText());
         double nu2=Double.parseDouble(txt2.getText());
         double r= nu1*nu2;
-        rpta.setText("la multiplicacion es  "+r);
+        rpta.setText("la multiplicacion es "+r);
     }//GEN-LAST:event_mutiplicacionActionPerformed
 
     private void divisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divisionActionPerformed
