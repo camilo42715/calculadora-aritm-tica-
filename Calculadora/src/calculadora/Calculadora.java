@@ -35,32 +35,32 @@ public class Calculadora {
         int entrada = capt.nextInt();
         switch (entrada) {
             case 1:
-                System.out.println("seleciones la operacin a realizar:  \n 1. Suma \n 2.Resta \n 3.Multiplicar \n 4.Divion");
+                System.out.println("seleciones la operacin a realizar:  \n 1. Suma \n 2.Resta \n 3.Multiplicar \n 4.Division");
                 operacion = capt.nextInt();
                 switch (operacion) {
                     case 1:
                         System.out.println("primer numero ");
-                        int a = capt.nextInt();
+                        double a = capt.nextDouble();
                         System.out.println("segundo numero ");
-                        int b = capt.nextInt();
+                        double b= capt.nextDouble();
                         micalculadora.operando1 = a;
                         micalculadora.operando2 = b;
                         System.out.println(micalculadora.sumar());
 
                     case 2:
                         System.out.println("primer numero ");
-                        a = capt.nextInt();
+                        a = capt.nextDouble();
                         System.out.println("segundo numero ");
-                        b = capt.nextInt();
+                        b = capt.nextDouble();
                         micalculadora.operando1 = a;
                         micalculadora.operando2 = b;
 
                         System.out.println(micalculadora.restar());
                     case 3:
                         System.out.println("primer numero ");
-                        a = capt.nextInt();
+                        a = capt.nextDouble();
                         System.out.println("segundo numero ");
-                        b = capt.nextInt();
+                        b = capt.nextDouble();
                         micalculadora.operando1 = a;
                         micalculadora.operando2 = b;
                         System.out.println(micalculadora.multiplicar());

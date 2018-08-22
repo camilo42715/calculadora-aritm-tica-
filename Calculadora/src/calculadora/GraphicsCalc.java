@@ -46,8 +46,8 @@ public class GraphicsCalc extends javax.swing.JFrame {
         txt4 = new javax.swing.JTextField();
         cm_m = new javax.swing.JButton();
         m_cm = new javax.swing.JButton();
-        seno3 = new javax.swing.JButton();
-        seno4 = new javax.swing.JButton();
+        mt_ft = new javax.swing.JButton();
+        ft_m = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -144,19 +144,19 @@ public class GraphicsCalc extends javax.swing.JFrame {
             }
         });
 
-        seno3.setFont(new java.awt.Font("Tempus Sans ITC", 1, 11)); // NOI18N
-        seno3.setText("m-ft");
-        seno3.addActionListener(new java.awt.event.ActionListener() {
+        mt_ft.setFont(new java.awt.Font("Tempus Sans ITC", 1, 11)); // NOI18N
+        mt_ft.setText("m-ft");
+        mt_ft.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                seno3ActionPerformed(evt);
+                mt_ftActionPerformed(evt);
             }
         });
 
-        seno4.setFont(new java.awt.Font("Tempus Sans ITC", 1, 11)); // NOI18N
-        seno4.setText("ft-m");
-        seno4.addActionListener(new java.awt.event.ActionListener() {
+        ft_m.setFont(new java.awt.Font("Tempus Sans ITC", 1, 11)); // NOI18N
+        ft_m.setText("ft-m");
+        ft_m.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                seno4ActionPerformed(evt);
+                ft_mActionPerformed(evt);
             }
         });
 
@@ -208,9 +208,9 @@ public class GraphicsCalc extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(m_cm)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(seno3)
+                                .addComponent(mt_ft)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(seno4)))
+                                .addComponent(ft_m)))
                         .addGap(0, 35, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
@@ -247,8 +247,8 @@ public class GraphicsCalc extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cm_m)
                     .addComponent(m_cm)
-                    .addComponent(seno3)
-                    .addComponent(seno4))
+                    .addComponent(mt_ft)
+                    .addComponent(ft_m))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -259,34 +259,42 @@ public class GraphicsCalc extends javax.swing.JFrame {
 
     private void sumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sumaActionPerformed
         // TODO add your handling code here:
+        CalculadoraAritmetica primero=new CalculadoraAritmetica();
         double nu1=Double.parseDouble(txt1.getText());
         double nu2=Double.parseDouble(txt2.getText());
-        double r= nu1+nu2;
-        rpta.setText("la suma es "+r);
+        primero.operando1=nu1;
+        primero.operando2=nu2;
+        rpta.setText("la suma es "+primero.sumar());
     }//GEN-LAST:event_sumaActionPerformed
 
     private void restaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_restaActionPerformed
         // TODO add your handling code here:
+        CalculadoraAritmetica primero=new CalculadoraAritmetica();
         double nu1=Double.parseDouble(txt1.getText());
         double nu2=Double.parseDouble(txt2.getText());
-        double r= nu1-nu2;
-        rpta.setText("la resta es "+r);
+        primero.operando1=nu1;
+        primero.operando2=nu2;
+        rpta.setText("la resta es "+primero.restar());
     }//GEN-LAST:event_restaActionPerformed
 
     private void mutiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mutiplicacionActionPerformed
         // TODO add your handling code here:
+        CalculadoraAritmetica primero=new CalculadoraAritmetica();
         double nu1=Double.parseDouble(txt1.getText());
         double nu2=Double.parseDouble(txt2.getText());
-        double r= nu1*nu2;
-        rpta.setText("la multiplicacion es "+r);
+        primero.operando1=nu1;
+        primero.operando2=nu2;
+        rpta.setText("la multiplicacion es "+primero.multiplicar());
     }//GEN-LAST:event_mutiplicacionActionPerformed
 
     private void divisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divisionActionPerformed
         // TODO add your handling code here:
+        CalculadoraAritmetica primero=new CalculadoraAritmetica();
         double nu1=Double.parseDouble(txt1.getText());
         double nu2=Double.parseDouble(txt2.getText());
-        double r= nu1/nu2;
-        rpta.setText("la division es  "+r);
+        primero.operando1=nu1;
+        primero.operando2=nu2;
+        rpta.setText("la division es "+primero.dividir());
     }//GEN-LAST:event_divisionActionPerformed
 
     private void senoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_senoActionPerformed
@@ -316,19 +324,36 @@ public class GraphicsCalc extends javax.swing.JFrame {
 
     private void cm_mActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cm_mActionPerformed
         // TODO add your handling code here:
+        CalculadoraConversion conv=new CalculadoraConversion ();
+        double nu1=Double.parseDouble(txt4.getText());
+        conv.valor=nu1;
+        rpta.setText("el numero ingresado en centimetros corresponde a  "+conv.CmMetros()+ "metros");
     }//GEN-LAST:event_cm_mActionPerformed
 
     private void m_cmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m_cmActionPerformed
         // TODO add your handling code here:
+        CalculadoraConversion conv=new CalculadoraConversion ();
+        double nu1=Double.parseDouble(txt4.getText());
+        conv.valor=nu1;
+        rpta.setText("el numero ingresado en metros corresponde a  "+conv.MetrosCm()+ "centimetros");
+        
     }//GEN-LAST:event_m_cmActionPerformed
 
-    private void seno3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seno3ActionPerformed
+    private void mt_ftActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mt_ftActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_seno3ActionPerformed
+        CalculadoraConversion conv=new CalculadoraConversion ();
+        double nu1=Double.parseDouble(txt4.getText());
+        conv.valor=nu1;
+        rpta.setText("el numero ingresado en metros corresponde a  "+conv.Metrosft()+ "pies");
+    }//GEN-LAST:event_mt_ftActionPerformed
 
-    private void seno4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seno4ActionPerformed
+    private void ft_mActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ft_mActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_seno4ActionPerformed
+        CalculadoraConversion conv=new CalculadoraConversion ();
+        double nu1=Double.parseDouble(txt4.getText());
+        conv.valor=nu1;
+        rpta.setText("el numero ingresado en pies corresponde a  "+conv.FtMetro()+ "metros");
+    }//GEN-LAST:event_ft_mActionPerformed
 
     private void sumaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sumaMouseClicked
            // TODO add your handling code here:
@@ -373,18 +398,18 @@ public class GraphicsCalc extends javax.swing.JFrame {
     private javax.swing.JButton cm_m;
     private javax.swing.JButton coseno;
     private javax.swing.JButton division;
+    private javax.swing.JButton ft_m;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton m_cm;
+    private javax.swing.JButton mt_ft;
     private javax.swing.JButton mutiplicacion;
     private javax.swing.JButton resta;
     private javax.swing.JTextArea rpta;
     private javax.swing.JButton seno;
-    private javax.swing.JButton seno3;
-    private javax.swing.JButton seno4;
     private javax.swing.JButton suma;
     private javax.swing.JButton tangente;
     private javax.swing.JTextField txt1;

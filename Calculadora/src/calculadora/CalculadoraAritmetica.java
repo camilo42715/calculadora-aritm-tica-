@@ -11,23 +11,23 @@ package calculadora;
  */
 public class CalculadoraAritmetica {
 
-    public int operando1;
-    public int operando2;
+    public double operando1;
+    public double operando2;
 
-    public int sumar() {
-        int r;
+    public double sumar() {
+      double r;
         r = operando1 + operando2;
         return r;
     }
 
-    public int restar() {
-        int r;
+    public double restar() {
+        double r;
         r = operando1 - operando2;
         return r;
     }
 
-    public int multiplicar() {
-        int r;
+    public double multiplicar() {
+        double r;
         r = operando1 * operando2;
         return r;
     }
