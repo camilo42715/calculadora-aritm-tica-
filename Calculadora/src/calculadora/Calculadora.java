@@ -81,14 +81,16 @@ public class Calculadora {
                 cas = capt.nextInt();
                 switch (cas) {
                     case 1:
-                        System.out.println("ingrese su  angulo");
+                     System.out.println("ingrese su  angulo");
                         angulonuevo = capt.nextInt();
+                        calculadorapro.convertir(angulonuevo);
                         calculadorapro.call = angulonuevo;
                         System.out.println(calculadorapro.seno());
                     case 2:
                         System.out.println("ingrese su  angulo");
                         angulonuevo = capt.nextInt();
-                        
+                        calculadorapro.convertir(angulonuevo);
+                        calculadorapro.call = angulonuevo;
                         System.out.println(calculadorapro.coseno());
                     case 3:
                         System.out.println("ingrese su  angulo");

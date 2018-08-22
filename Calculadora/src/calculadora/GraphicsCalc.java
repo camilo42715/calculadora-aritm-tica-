@@ -59,6 +59,11 @@ public class GraphicsCalc extends javax.swing.JFrame {
 
         suma.setFont(new java.awt.Font("Tempus Sans ITC", 1, 11)); // NOI18N
         suma.setText("+");
+        suma.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                sumaMouseClicked(evt);
+            }
+        });
         suma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sumaActionPerformed(evt);
@@ -225,7 +230,7 @@ public class GraphicsCalc extends javax.swing.JFrame {
                     .addComponent(resta)
                     .addComponent(mutiplicacion)
                     .addComponent(division))
-                .addGap(37, 37, 37)
+                .addGap(43, 43, 43)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(txt3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -244,7 +249,7 @@ public class GraphicsCalc extends javax.swing.JFrame {
                     .addComponent(m_cm)
                     .addComponent(seno3)
                     .addComponent(seno4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -324,6 +329,10 @@ public class GraphicsCalc extends javax.swing.JFrame {
     private void seno4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seno4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_seno4ActionPerformed
+
+    private void sumaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sumaMouseClicked
+           // TODO add your handling code here:
+    }//GEN-LAST:event_sumaMouseClicked
 
     /**
      * @param args the command line arguments
